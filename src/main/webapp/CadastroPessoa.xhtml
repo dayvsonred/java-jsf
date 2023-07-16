@@ -23,15 +23,21 @@
 				<h:inputText value="#{bean.pessoa.cpf}" />
 				<h:outputText value="Funcionario" />
 				<p:selectBooleanCheckbox value="#{selectBooleanView.value1}" itemLabel="Basic"/>
-				<h:commandButton value="Adicionar" action="#{bean.adicionar}" ></h:commandButton>
+				<h:commandButton value="Adicionar" action="#{bean.add}" ></h:commandButton>
 			</h:panelGrid>
 		</h:form>
 		
 		<h1>Listar de pessoas</h1>
 		
-		<h:dataTable value="{#bean.pessoas}" var="p" bodre=1>
-			<h:column>#{p.nome}</h:column>
-			<h:column>#{p.cpf}</h:column>
+		<h:dataTable value="#{bean.pessoas}" var="p" border="1">
+			<h:column>
+                    <f:facet name="header">nome</f:facet>
+                    #{p.nome}
+            </h:column>
+            <h:column>
+                    <f:facet name="header">CPF</f:facet>
+                    #{p.cpf}
+            </h:column>
 		</h:dataTable>
 
 </h:body>

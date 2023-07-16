@@ -1,7 +1,6 @@
 package model;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class Pessoa implements Serializable {
@@ -13,7 +12,7 @@ public class Pessoa implements Serializable {
 	
 	private Long id;
 	private String nome;
-	private LocalDateTime datanascimento;
+	private String datanascimento;
 	private String cpf;
 	private Boolean funcionario;
 	 
@@ -30,10 +29,10 @@ public class Pessoa implements Serializable {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public LocalDateTime getDatanascimento() {
+	public String getDatanascimento() {
 		return datanascimento;
 	}
-	public void setDatanascimento(LocalDateTime datanascimento) {
+	public void setDatanascimento(String datanascimento) {
 		this.datanascimento = datanascimento;
 	}
 	public String getCpf() {
