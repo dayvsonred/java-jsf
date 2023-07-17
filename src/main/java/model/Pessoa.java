@@ -14,7 +14,7 @@ public class Pessoa implements Serializable {
 	private String nome;
 	private String datanascimento;
 	private String cpf;
-	private Boolean funcionario;
+	private boolean funcionario;
 	 
 	 
 	public Long getId() {
@@ -41,12 +41,16 @@ public class Pessoa implements Serializable {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	public Boolean getFuncionario() {
+	public boolean getFuncionario() {
 		return funcionario;
 	}
-	public void setFuncionario(Boolean funcionario) {
+	public void setFuncionario(boolean funcionario) {
 		this.funcionario = funcionario;
 	}
+	
+    public boolean isFuncionario() {
+        return this.funcionario;
+    }
 	
 	@Override
 	public int hashCode() {
