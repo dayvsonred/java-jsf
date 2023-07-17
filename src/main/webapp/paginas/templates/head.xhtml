@@ -1,44 +1,29 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html 
-		xmlns="http://www.w3.org/1999/xhtml"
-	    xmlns:h="http://xmlns.jcp.org/jsf/html"
-        xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-        xmlns:f="http://xmlns.jcp.org/jsf/core"
-        xmlns:p="http://primefaces.org/ui"
->
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                >
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<h:outputStylesheet library="css" name="file.css" />
 	<h:outputStylesheet library="css" name="title.css" />
-	<title>Insert title here</title>
-	<style>
-	    p {
-	        line-height: 1.5;
-	        margin: 0;
-	    }
-	    
-	</style>
 </h:head>
-<h:body>
-
 
 <p:card style="width: 100%; margin-bottom: 0.5em">
    <div class="eleven">
 	  <h1>
 	  	<img style="width: 30px;" src="data:image/jpeg;base64,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" />
-	  	Marina PrimeFaces Teste 
+	  	Marina PrimeFaces Test 
 	  </h1>
 	</div>
-	<div class="card">
-    
-</div>
 </p:card>
-
 
 <p:card style="width: 100%; margin-bottom: 2em">
 <h:form>
-        <p:growl id="messages"/>
+        
 
         <p:menubar>
         
@@ -58,49 +43,5 @@
         </p:menubar>
     </h:form>
 </p:card>
- 
-		
-		
-<p:card style="width: 100%; margin-bottom: 2em">
-	<h:form id="form" >
-		
-		<h1> Informações de cadastro </h1>
-		<p:panel>
-			<h:panelGrid colums="2">
-				<p:outputLabel value="Nome" />
-				<p:inputText value="#{bean.pessoa.nome}" size="50" required="true"/>
-				<p:outputLabel value="Data Nascimento" />
-				<p:inputText value="#{bean.pessoa.datanascimento}" size="50"/>
-				<p:outputLabel value="CPF" />
-				
-				<p:inputMask mask="999.999.999.-99" value="#{bean.pessoa.cpf}" size="50" />
-				<p:outputLabel value="Funcionario" />
-				<p:selectBooleanCheckbox value="#{bean.pessoa.funcionario}" itemLabel="Basic"/>
-				<p:commandButton value="Adicionar" action="#{bean.add}" update="form tabelaPessoa" size="100"  />
-			</h:panelGrid>
-		</p:panel>
-	</h:form>
-</p:card>
 
-		
-<p:card style="width: 100%; margin-bottom: 2em">
-	<h1>Listar de pessoas</h1>
-	
-	<p:dataTable value="#{bean.pessoas}" var="p" border="1" id="tabelaPessoa">
-		<p:column>
-                   <f:facet name="header">nome</f:facet>
-                   #{p.nome}
-           </p:column>
-           <p:column>
-                   <f:facet name="header">CPF</f:facet>
-                   #{p.cpf}
-           </p:column>
-            <p:column>
-                   <f:facet name="header">Editar</f:facet>
-                   <p:button value="Editar" outcome="/paginas/Sucesso.xhtml?parametro=#{p.nome}"/>
-           </p:column>
-	</p:dataTable>
-</p:card>
-
-</h:body>
-</html>
+</ui:composition>
